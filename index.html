@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Avaliações - 1ª Chamada</title>
+    <style>
+        @page {
+            size: landscape;
+            margin: 20mm;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 4px solid #667eea;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+        }
+        
+        .header h2 {
+            color: #4a5568;
+            font-size: 20px;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+        
+        .header p {
+            color: #718096;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 15px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 18px 15px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 15px;
+            color: #2d3748;
+        }
+        
+        tr:hover {
+            background-color: #f7fafc;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .date-cell {
+            font-weight: 600;
+            color: #667eea;
+            white-space: nowrap;
+        }
+        
+        .time-cell {
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .subject-cell {
+            color: #2d3748;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #718096;
+            font-size: 14px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .highlight-row {
+            background-color: #fef5e7;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Horário de Avaliações - 1ª Chamada</h1>
+            <h2>CEPMG - VASCO DOS REIS</h2>
+            <p>Ensino Médio - IV Bimestre 2025</p>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%">Data</th>
+                    <th style="width: 25%">Horários</th>
+                    <th style="width: 50%">Disciplinas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="date-cell">03/11/2025<br><small>(segunda-feira)</small></td>
+                    <td class="time-cell">4º, 5º e 6º horários</td>
+                    <td class="subject-cell">Simulado Produção de Texto</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">18/11/2025<br><small>(terça-feira)</small></td>
+                    <td class="time-cell">4º, 5º e 6º horários</td>
+                    <td class="subject-cell">Arte • Geografia • Matemática</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">19/11/2025<br><small>(quarta-feira)</small></td>
+                    <td class="time-cell">4º, 5º e 6º horários</td>
+                    <td class="subject-cell">Estudo Orientado Matemática • Filosofia • Língua Portuguesa</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">24/11/2025<br><small>(segunda-feira)</small></td>
+                    <td class="time-cell">4º, 5º e 6º horários</td>
+                    <td class="subject-cell">Educação Física • História • Sociologia</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">25/11/2025<br><small>(terça-feira)</small></td>
+                    <td class="time-cell">4º, 5º e 6º horários</td>
+                    <td class="subject-cell">Estudo Orientado Literatura • Física • Inglês</td>
+                </tr>
+                <tr>
+                    <td class="date-cell">26/11/2025<br><small>(quarta-feira)</small></td>
+                    <td class="time-cell">4º, 5º e 6º horários</td>
+                    <td class="subject-cell">Biologia • Civismo e Cidadania • Química</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td class="date-cell">01/12/2025<br><small>(segunda-feira)</small></td>
+                    <td class="time-cell"><strong>Todos os horários</strong></td>
+                    <td class="subject-cell"><strong>Simulado Conhecimentos Gerais</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            <p><strong>Recuperação Final:</strong> 05 a 18/12/2025</p>
+            <p>Organize-se e bons estudos! 📖✨</p>
+        </div>
+    </div>
+    
+    <script>
+        // Opcional: Função para imprimir automaticamente ao carregar
+        // window.onload = function() { window.print(); }
+    </script>
+</body>
+</html>
